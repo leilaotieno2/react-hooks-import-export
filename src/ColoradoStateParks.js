@@ -1,8 +1,18 @@
 import React from "react";
+import Hogwarts from "./Hogwarts";
 import howManyParks from "./parks/howManyParks";
 
-function ColoradoStateParks() {
-  howManyParks(); // => "42 parks!"
+export default ColoradoStateParks;
 
-  return <h1>Colorado State Parks!</h1>;
-}
+function ColoradoStateParks() {
+howManyParks(); // => "42 parks!"
+
+  return (<div>
+<h1>Colorado State Parks!</h1>
+
+<Hogwarts />
+  </div>)
+  }
+
+
+
